@@ -7,6 +7,8 @@
     background-size:cover;
     /* background-image: url(/images/dog2.jpg); */
     background-image: url(/image/dog.jpeg);
+    background-image: url(/image/00.jpg);
+    /* background-repeat: no-repeat; */
     text-align: center;
     margin: auto;
     border: 2px solid red;
