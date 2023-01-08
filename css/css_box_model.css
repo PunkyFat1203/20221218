@@ -1,16 +1,42 @@
 .box {
     width: 100px;
     height: 100px;
-    line-height: 80px;
+    line-height: 40px;
     background: #dedede;
+    /* background-color: #429b9e; */
+    background-size:cover;
+    /* background-image: url(/images/dog2.jpg); */
+    background-image: url(/image/dog.jpeg);
     text-align: center;
     margin: auto;
     border: 2px solid red;
     padding: 10px;
     box-sizing: border-box;
     word-break: break-all;
-    color:rgb(1, 190, 42);
-    font-size: 50px;
+    color:rgb(169, 151, 231);
+    font-size: 30px;
     font-weight: 400;
-    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Rubik Bubbles', cursive;
 }
+
+.box2 {
+    width:100px;
+    height: 100px;
+    box-sizing: border-box;
+    border:3px solid #000;
+    background: #dedede;
+    color: red;
+    padding: 10px;
+}
+
+.button {
+    /* width: 100px;
+    height: 50px;
+    line-height: 50px; */
+    background: #3564e4;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding:10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
