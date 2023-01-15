@@ -33,7 +33,7 @@
 .absolute {
     background: rgb(235, 232, 91);
     position: absolute;
-    z-index:2;
+    /* z-index:2; */
 }
 
 .fixed {
