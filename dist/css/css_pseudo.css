@@ -30,7 +30,7 @@
   color: aliceblue;
 }
 
-.large-ckecked:checked {
+.large-checked:checked {
   width: 200px;
   height: 200px;
 }
