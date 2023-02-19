@@ -117,69 +117,78 @@ a {
   display: inline-block;
 }
 
-.hover-text {
-  width: 80%;
-  height: 100PX;
-  background: red;
-  color: yellow;
-  margin: 10PX auto;
+body {
+  background: #000;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .header-content {
+  background: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-size: 30PX;
-  font-weight: 600;
+  padding: 20px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
-.hover-text:hover {
-  background: blue;
-  color: aliceblue;
-}
-
-.large-checked:checked {
-  width: 200px;
-  height: 200px;
-}
-
-.block .item {
-  color: red;
-}
-.block :not(.item) {
-  color: yellowgreen;
-}
-
-.nth-child {
-  width: 80%;
-  background: #dedede;
-  margin: 10px auto;
+.header .menu {
   list-style-type: none;
-}
-.nth-child li {
-  height: 50px;
-  background: blue;
-  color: #fff;
-  margin-bottom: 10px;
   display: flex;
-  align-items: center;
-  padding: 5px;
 }
-.nth-child li:nth-child(2) {
-  color: red;
-  justify-content: center;
+.header .menu li {
+  margin-left: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+.header .menu li:first-child {
+  margin-left: 0;
+}
+.header .menu li:hover {
+  color: rgb(47, 47, 255);
+}
+.header .menu .en {
+  font-size: 12px;
+  font-family: monospace;
+  text-transform: uppercase;
 }
 
-.student {
-  width: 80%;
-  margin: 10px auto;
-  border-spacing: 0;
-  border-collapse: collapse;
+.join-form {
+  color: #fff;
+  background: #000;
+  background-image: url(../images/banner.jpeg);
+  background-size: cover;
 }
-.student td,
-.student th {
-  border: 1px solid #000;
-  padding: 10px;
+.join-form .join-form-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
-.student tbody tr:nth-child(even) td {
-  background: #dedede;
+.join-form .join-form-content .content-wrap {
+  background: rgba(14, 50, 80, 0.9);
+  display: flex;
+  width: 100%;
 }
-.student tbody tr:last-child td {
-  background: yellow;
-}/*# sourceMappingURL=css_pseudo.css.map */
+.join-form .join-form-content .content-wrap > div {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+.join-form .join-form-content .content-wrap > div:first-child::before {
+  content: "";
+  border-right: 3px dashed #fff;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  height: calc(100% - 40px);
+}
+.join-form .join-form-text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: justify;
+}/*# sourceMappingURL=layout_1.css.map */
