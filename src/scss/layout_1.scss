@@ -197,8 +197,19 @@ body {
     }
 }
 
+// .footer {
+//     background: #fff;
+//     padding: 50px 0;
+//     text-align: right;   
+// }
+
 .footer {
     background: #fff;
-    padding: 50px 0;
-    text-align: right;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
