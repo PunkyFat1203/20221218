@@ -114,6 +114,7 @@ body {
         text-align: justify;
     }
 }
+
 .process-flow {
     background: #000;
     background-image: url(../images/process.jpeg);
@@ -167,7 +168,7 @@ body {
         padding: 20px 0;
         margin-bottom: 15px;
 
-                &:nth-child(even) {
+        &:nth-child(even) {
             .flow-text {
                 right: 50%;
                 left: unset;
@@ -197,19 +198,15 @@ body {
     }
 }
 
-// .footer {
-//     background: #fff;
-//     padding: 50px 0;
-//     text-align: right;   
-// }
-
 .footer {
+    background: #fff;
+    padding: 50px 0;
+    // text-align: content;
+}
+
+.footer-content {
     background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
 }
