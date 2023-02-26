@@ -1,0 +1,29 @@
+@import 'reset';
+
+.block {
+    width: 200px;
+    height: 200px;
+    background: rgb(102, 47, 255);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+
+    &.active{
+        animation-name: move;
+        animation-duration: 3s;
+        transform: translate(80%);
+    }
+}
+
+@keyframes move {
+    form {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(80%);
+    }
+}

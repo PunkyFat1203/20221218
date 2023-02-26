@@ -1,0 +1,60 @@
+@import 'reset';
+
+body {
+    background-color: rgb(0, 119, 255);
+}
+
+.cloud {
+    width: 450px;
+    height: 150px;
+    border-radius: 70px;
+    background-color: rgb(224, 226, 228);
+    transform: translateX(10%) translateY(20vh);
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 125Px;
+        height: 125px;
+        border-radius: 125px;
+        background-color: rgb(224, 226, 228);
+        top: -50px;
+        left: 80px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 250Px;
+        height: 250px;
+        border-radius: 250px;
+        background-color: rgb(224, 226, 228);
+        top: -100px;
+        left: 150px;
+    }
+
+    &.s1 {
+        transform: translate(10%, 15vh);
+        animation-name: move-1;
+        animation-duration: 2s;
+    }
+
+    &.s2 {
+        transform: translate(10%, 27vh) scale(0.8);
+        animation-name: move-1;
+        animation-duration: 2s;
+    }
+
+    &.s3 {
+        transform: translate(10%, 23vh) scale(0.2);;
+        animation-name: move-1;
+        animation-duration: 2s;
+    }
+
+    &.s4 {
+        transform: translate(10%, 25vh) scale(0.6);;
+        animation-name: move-1;
+        animation-duration: 2s;
+    }
+}
