@@ -117,28 +117,54 @@ a {
   display: inline-block;
 }
 
-.block {
-  width: 200px;
-  height: 200px;
-  background: rgb(102, 47, 255);
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin: 15PX auto;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.student-table th,
+.student-table td {
+  border: 1px solid #dedede;
+  padding: 10px;
+}
+.student-table th {
+  background: #dedede;
+}
+.student-table tr td:last-child {
+  text-align: right;
+}
+.student-table tr:nth-child(even) {
+  background-color: #0d64aa;
+  color: #fff;
+}
+
+.fn {
+  margin: 10px auto;
+  text-align: right;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 0;
   font-weight: 700;
   cursor: pointer;
 }
-.block.active {
-  animation-name: move;
-  animation-duration: 3s;
-  transform: translate(80%);
+.btn.danger {
+  background: #ff4b4b;
+  color: #fff;
+}
+.btn.danger:hover {
+  background: #b42a2a;
 }
 
-@keyframes move {
-  from {
-    transform: translate(0);
+@media print {
+  .fn {
+    display: none;
   }
-  to {
-    transform: translate(80%);
-  }
-}/*# sourceMappingURL=keyframe.css.map */
+}/*# sourceMappingURL=rwd_print.css.map */

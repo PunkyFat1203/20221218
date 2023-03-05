@@ -118,27 +118,20 @@ a {
 }
 
 .block {
-  width: 200px;
-  height: 200px;
-  background: rgb(102, 47, 255);
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  cursor: pointer;
-}
-.block.active {
-  animation-name: move;
-  animation-duration: 3s;
-  transform: translate(80%);
+  background-color: rgb(46, 189, 46);
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-@keyframes move {
-  from {
-    transform: translate(0);
+@media screen and (max-width: 800px) {
+  .block {
+    background-color: rgb(173, 34, 34);
+    color: #000;
   }
-  to {
-    transform: translate(80%);
+}
+@media screen and (max-width: 600px) {
+  .block {
+    background-color: rgb(74, 74, 255);
   }
-}/*# sourceMappingURL=keyframe.css.map */
+}/*# sourceMappingURL=rwd_max_width.css.map */
