@@ -117,64 +117,62 @@ a {
   display: inline-block;
 }
 
-body {
-  background-color: rgb(0, 119, 255);
+.product-block {
+  margin-top: 20px;
 }
-
-.cloud {
-  width: 450px;
-  height: 150px;
-  border-radius: 70px;
-  background-color: rgb(224, 226, 228);
-  transform: translateX(10%) translateY(20vh);
+.product-block .product {
+  width: 300px;
+  min-height: 200px;
+  background-color: #dedede;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.product-block .product .product-image {
+  width: 100%;
+  height: 200px;
+  background-color: #ff5858;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  display: flex;
   position: relative;
+  overflow: hidden;
 }
-.cloud::after {
-  content: "";
+.product-block .product .product-image .product-image-bar {
+  width: 100%;
+  height: 25PX;
+  background: #ff5858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15PX;
+  font-weight: 800;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Shantell Sans", cursive;
+  transform: rotate(45deg);
   position: absolute;
-  width: 125Px;
-  height: 125px;
-  border-radius: 125px;
-  background-color: rgb(224, 226, 228);
-  top: -50px;
-  left: 80px;
+  right: -106px;
+  top: 15px;
+  padding: 1px;
 }
-.cloud::before {
-  content: "";
-  position: absolute;
-  width: 250Px;
-  height: 250px;
-  border-radius: 250px;
-  background-color: rgb(224, 226, 228);
-  top: -100px;
-  left: 150px;
+.product-block .product .product-image .product-image-warp {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/dog.jpeg);
+  background-size: cover;
+  background-position: center;
+  transition: 3s;
+  transition-timing-function: ease;
 }
-.cloud.s1 {
-  transform: translate(10%, 15vh);
-  animation-name: move-1;
-  animation-duration: 2s;
+.product-block .product .product-image:hover .product-image-warp {
+  transform: scale(1.5);
 }
-.cloud.s2 {
-  transform: translate(10%, 27vh) scale(0.8);
-  animation-name: move-1;
-  animation-duration: 2s;
+.product-block .product .product-image:hover .discount-bar {
+  background-color: #ffe600;
+  color: #fff5f5;
 }
-.cloud.s3 {
-  transform: translate(10%, 23vh) scale(0.2);
-  animation-name: move-1;
-  animation-duration: 2s;
-}
-.cloud.s4 {
-  transform: translate(10%, 25vh) scale(0.6);
-  animation-name: move-1;
-  animation-duration: 2s;
-}
-
-@keyframes move {
-  from {
-    margin-left: 0;
-  }
-  to {
-    margin-left: 100%;
-  }
-}/*# sourceMappingURL=cloud.css.map */
+.product-block .product .product-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=product_discount01.css.map */

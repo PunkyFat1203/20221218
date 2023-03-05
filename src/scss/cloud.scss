@@ -57,4 +57,15 @@ body {
         animation-name: move-1;
         animation-duration: 2s;
     }
+    
+}
+
+@keyframes move {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: 100%;
+    }
 }

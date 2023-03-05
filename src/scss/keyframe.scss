@@ -11,7 +11,7 @@
     font-weight: 700;
     cursor: pointer;
 
-    &.active{
+    &.active {
         animation-name: move;
         animation-duration: 3s;
         transform: translate(80%);
@@ -19,7 +19,7 @@
 }
 
 @keyframes move {
-    form {
+    from {
         transform: translate(0);
     }
 
