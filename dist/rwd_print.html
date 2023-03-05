@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwd Print</title>
+    <link rel="stylesheet" href="css/rwd_print.css">
+</head>
+<body>
+    <div class="container">
+        <div class="blok">
+            <h3 class="title">Dog & weight</h3>
+            <div class="fn">
+                <button class="btn danger" id="Print-btn">列印</button>
+            </div>
+            <table class="student-table">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>weight</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>big one</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>C block</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>NANA</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Nico lalal</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>SaSa</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>Nico</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>bibi</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>lone</td>
+                        <td>36</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script>
+    let btn = document.querySelector('#print-btn');
+    if (btn) {
+        btn.addEventListener('click', () => {
+            window.print();
+        })
+    }
+</script>
+
+</html>

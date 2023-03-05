@@ -1,0 +1,23 @@
+@import 'reset';
+
+.block {
+    background-color: rgb(46, 189, 46);
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .block {
+        background-color: rgb(173, 34, 34);
+        color: #000;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .block {
+        background-color: rgb(74, 74, 255);
+    }
+    
+}
