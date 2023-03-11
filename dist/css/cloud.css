@@ -119,6 +119,28 @@ a {
 
 body {
   background-color: rgb(0, 119, 255);
+  overflow: hidden;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  color: #ff0000;
+  background: rgba(0, 0, 0, 0.0901960784);
+}
+
+.cloud-group {
+  position: fixed;
+  top: 0;
+  left: o;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1;
 }
 
 .cloud {
@@ -126,8 +148,9 @@ body {
   height: 150px;
   border-radius: 70px;
   background-color: rgb(224, 226, 228);
-  transform: translateX(10%) translateY(20vh);
   position: relative;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .cloud::after {
   content: "";
@@ -155,26 +178,58 @@ body {
   animation-duration: 2s;
 }
 .cloud.s2 {
-  transform: translate(10%, 27vh) scale(0.8);
-  animation-name: move-1;
-  animation-duration: 2s;
+  transform: translate(100px, 27vh) scale(0.8);
+  animation-name: move-2;
+  animation-duration: 7s;
 }
 .cloud.s3 {
-  transform: translate(10%, 23vh) scale(0.2);
-  animation-name: move-1;
-  animation-duration: 2s;
+  transform: translate(150px, 23vh) scale(0.2);
+  animation-name: move-3;
+  animation-duration: 4s;
 }
 .cloud.s4 {
-  transform: translate(10%, 25vh) scale(0.6);
-  animation-name: move-1;
-  animation-duration: 2s;
+  transform: translate(50px, 25vh) scale(0.6);
+  animation-name: move-4;
+  animation-duration: 5s;
 }
 
 @keyframes move {
   from {
-    margin-left: 0;
+    transform: translate(0, 0);
   }
   to {
-    margin-left: 100%;
+    transform: translate(100%, 0);
+  }
+}
+@keyframes move-1 {
+  from {
+    transform: translate(10%, 15vh);
+  }
+  to {
+    transform: translate(100%, 15vh);
+  }
+}
+@keyframes move-2 {
+  from {
+    transform: translate(100px, 27vh) scale(0.8);
+  }
+  to {
+    transform: translate(100%, 27vh) scale(0.8);
+  }
+}
+@keyframes move-3 {
+  from {
+    transform: translate(150px, 23vh) scale(0.2);
+  }
+  to {
+    transform: translate(100%, 23vh) scale(0.2);
+  }
+}
+@keyframes move-4 {
+  from {
+    transform: translate(50px, 25vh) scale(0.6);
+  }
+  to {
+    transform: translate(100%, 25vh) scale(0.6);
   }
 }/*# sourceMappingURL=cloud.css.map */

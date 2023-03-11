@@ -12,7 +12,7 @@
         height: 5px;
         background-color: #000;
         margin-bottom: 5px;
-        transition-property: background-color;
+        transition-property: background-color transform;
         transition-duration: 0.5s;
 
         &:last-child {
@@ -139,10 +139,12 @@
         > div:first-child::before {
             border-right: 0;
             border-bottom: 3px dashed #fff;
+            right: unset;
+            top: unset;
             position: absolute;
             bottom: 0;
             left: 20px;
-            height: calc(100% - 40px);
+            width: calc(100% - 40px);
         }
 
         .left-side {
