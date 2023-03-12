@@ -336,7 +336,7 @@ body {
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 720px) {
   .mobile-icon {
     display: flex;
   }
@@ -429,5 +429,6 @@ body {
   }
   .flow .flow-text {
     left: 0;
+    padding: 13px;
   }
 }/*# sourceMappingURL=layout_1_rwd.css.map */
