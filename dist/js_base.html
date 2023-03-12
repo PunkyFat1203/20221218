@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let firstName = 'Liao';
+    let lastName = 'PunkyFat';
+    // let fullName = firstName + ' ' + lastName;
+    fullName = `${firstName} 123456 ${lastName}`;
+    console.log(fullName);
+    
+    let n1 = 3.54;
+    let n2 = 6;
+    let n3 = n1 * n2
+    console.log(n3)
+
+    let con = 2;
+
+    if (con) {
+        console.log(`${con} is ture.`)
+    }
+
+    let dogs = [20, 30, 40,];
+
+    dogs.push(40);
+
+    console.log(dogs);
+
+    console.log(dogs[2]);
+
+    let scope = dogs.join(',');
+    console.log(scope, typeof scope, typeof dogs);
+
+    console.log(dogs.indexOf(200));
+
+    let index = dogs.indexOf(200);
+    console.log(index);
+    // dogs.splice(index, 1);
+    // console.log(dogs);
+
+    dogs.push(50);
+    dogs.push(60);
+    dogs.push(70);
+    dogs.push(80);
+
+    dogs.forEach((scope, index) => {
+        console.log(`index ${index}: ${scope}`);
+    })
+
+
+
+</script>
+
+<!-- <script src="js/js_basw.js"></script> -->
+</html>
