@@ -1,10 +1,2 @@
-let name = 'apia'
-console.log(name
-    
-    
-    
-    
-    
-    
-    
-    )
+let name = 'apya'
+console.log(name)
